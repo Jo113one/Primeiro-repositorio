@@ -1,0 +1,58 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*CSS vem aqui embaixo*/
+
+header {
+    background-color: #5F87DD;
+    padding: 20px;
+    position: fixed;
+    font-weight: bold;
+    width: 100%;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+body a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+
+body a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    transform: scale(2);
+}
+
+#apres {
+    margin-bottom: 60px;
+    padding-top: 60px;
+    background-color: #5F87DD;
+}
+
+#sobre {
+    margin: 20px 0px;
+    padding-top: 60px;
+}
+
+#habil {
+    margin-top: 20px;
+    padding-top: 60px;
+}
+
+footer {
+    background-color: #51DFA6;
+}
+
+.icone {
+    fill: white;
+    stroke: black;
+    stroke-width: 5px;
+    width: 50px;
+}
