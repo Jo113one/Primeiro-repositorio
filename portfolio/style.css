@@ -39,6 +39,31 @@ body a:hover {
 #sobre {
     margin: 20px 0px;
     padding-top: 60px;
+    display: flex;
+    gap: 50px;
+    margin-inline: 50px;
+    padding-inline: 50px;
+}
+
+.linksIcon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    gap: 5px;
+    padding: 5px;
+}
+
+.blockIcon{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+
+.iconSobre {
+    width: 50px;
+    height: 50px;
 }
 
 #habil {
@@ -46,20 +71,36 @@ body a:hover {
     padding-top: 60px;
 }
 
+#habil h3 {
+    border: #5F87DD solid;
+    text-align: center;
+}
+
+.habilidadesContainer {
+    padding-block: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.habilidadesBlock {
+    border: rgb(209, 207, 207) solid 1px;
+}
+
 footer {
     background-color: #51DFA6;
 }
 
 .icone {
-    fill: white;
-    stroke: black;
+    fill: black;
+    stroke: white;
     stroke-width: 10px;
     width: 50px;
     height: 50px;
+
 }
 
 footer ul {
     display: flex;
-    justify-content: space-around;
     list-style-type: none;
 }
