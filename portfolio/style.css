@@ -5,6 +5,14 @@
 
 /*CSS vem aqui embaixo*/
 
+.ModoClaro {
+    background-color: rgb(253, 253, 255);
+}
+
+.ModoEscuro {
+    background-color: rgb(134, 134, 134);
+}
+
 header {
     background-color: #132A4C;
     padding: 20px;
