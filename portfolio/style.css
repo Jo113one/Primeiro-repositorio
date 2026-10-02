@@ -5,20 +5,19 @@
 
 /*CSS vem aqui embaixo*/
 
-.ModoClaro {
-    background-color: rgb(253, 253, 255);
-}
-
-.ModoEscuro {
-    background-color: rgb(134, 134, 134);
-}
-
 header {
-    background-color: #132A4C;
     padding: 20px;
     position: fixed;
     font-weight: bold;
     width: 100%;
+}
+
+.TituloClaro {
+    background-color: rgb(33, 34, 138);
+}
+
+.TituloEscuro {
+    background-color: #132A4C;
 }
 
 body {
@@ -43,7 +42,20 @@ body a:hover {
 #apres {
     margin-bottom: 60px;
     padding-top: 60px;
+}
+
+.FundoEscuro {
     background-color: #121619;
+    margin-bottom: 60px;
+    padding-top: 60px;
+    color: #fff;
+}
+
+.FundoClaro {
+    background-color: #fff;
+    margin-bottom: 60px;
+    padding-top: 60px;
+    color: #000000;
 }
 
 #sobre {

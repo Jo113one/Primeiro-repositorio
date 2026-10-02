@@ -1,20 +1,34 @@
-var PlanoFundo = document.getElementById("apres");
-let botaoSimples = document.getElementById("simples");
+var meuFundo = document.getElementById("ModoEscuro");
+var meuTitulo = document.getElementById("Titulo");
+let CliqueEmMim = document.getElementById("simples");
 
-let modoEscuroAtivado = false;
+let oFundoEstaClaro = false;
 
-botaoSimples.onclick = trocaClasse
+let oTituloEstaClaro = false
+
+if (CliqueEmMim) {
+  CliqueEmMim.onclick = trocaClasse;
+}
 
 function trocaClasse() {
-    if(modoEscuroAtivado == true) {
-        PlanoFundo.classList.remove("PlanoFundo");
-        PlanoFundo.classList.add("modoClaro");
+    if (oFundoEstaClaro && oTituloEstaClaro) {
+        console.log("Fundo Escuro e Título Escuro");
+        
+        meuFundo.classList.remove("FundoClaro");
+        meuFundo.classList.add("FundoEscuro");
 
-        modoEscuroAtivado = false;
+        meuTitulo.classList.remove("TituloClaro");
+        meuTitulo.classList.add("TituloEscuro");
     } else {
-        PlanoFundo.classList.remove("modoClaro");
-        PlanoFundo.classList.add("PlanoFundo");
+        console.log("Mudando para Fundo Claro e Título Claro");
+        
+        meuFundo.classList.remove("FundoEscuro");
+        meuFundo.classList.add("FundoClaro");
 
-        modoEscuroAtivado = true;
+        meuTitulo.classList.remove("TituloEscuro");
+        meuTitulo.classList.add("TituloClaro");
     }
+
+    oFundoEstaClaro = !oFundoEstaClaro;
+    oTituloEstaClaro = !oTituloEstaClaro;
 }
