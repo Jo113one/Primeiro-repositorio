@@ -20,6 +20,14 @@ header {
     background-color: #132A4C;
 }
 
+button {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+    color: #76BBFC;
+    background-color: #4693F9;
+}
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #fff;
@@ -125,4 +133,35 @@ footer {
 footer ul {
     display: flex;
     list-style-type: none;
+}
+
+@media only screen and (min-width: 600px) {
+        body {
+            font-style: xx-large;
+        }
+    }
+
+    @media only screen and (min-width: 768px) {
+        body {
+            border-radius: x-large;
+        }
+    }
+
+    .icone {
+        height: 40px;
+        width: 40px;
+    }
+    @media only screen and (min-width: 992px) {
+        
+    }
+
+    @media only screen and (min-width: 1200px) {
+
+        main {
+            min-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            margin-block: auto;
+            gap: 20px;
+        }
 }
